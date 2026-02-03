@@ -1,12 +1,21 @@
 // import Counter from "@/components/Counter";
 // import Header from "@/components/header";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Therapy in Minneapolis | Live Your Life in Full Bloom",
+  description:
+    "Therapy for adults in Minneapolis helping with burnout, relationships, and self-esteem. Connect today.",
+};
+
+
 export default function Home() {
   return (
     <main className="text-[#223614]">
-      <div className="bg-[#fbf6f1] w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular">
-        <div className="relative ml-14 bg-amber-400 h-full w-145 overflow-hidden rounded-t-[999px]">
-          <Image src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/08197a74-c045-4a19-a7c9-0f85c1032bc4/daiga-ellaby-M2P08N9zi2k-unsplash.jpg" priority alt="hero-image" fill className="object-cover"
+      <section className="bg-[#fbf6f1] w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular">
+        <div className="relative ml-14 h-full w-145 overflow-hidden rounded-t-[999px]">
+          <Image src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/08197a74-c045-4a19-a7c9-0f85c1032bc4/daiga-ellaby-M2P08N9zi2k-unsplash.jpg" priority fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw"
+            alt="Bright therapy office with natural light"
           />
         </div>
         <div className="h-full ml-42 pt-48 max-w-xl flex items-center flex-col">
@@ -16,9 +25,9 @@ export default function Home() {
             Connect with me
           </button>
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[#e5e0da] flex flex-row justify-center items-center h-175">
+      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-175">
         <div className="h-full w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-3xl px-16 pt-52">
             <h2 className="font-medium text-6xl">Live a fulfilling life.</h2>
@@ -32,18 +41,19 @@ export default function Home() {
             src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/87fa2310-36df-4a24-a9e9-1b74df73f150/tanya-trukyr-ornZV1YJNNo-unsplash.jpg?format=1500w"
             alt="second-pic"
             fill
+            sizes="50vw"
             className="object-cover"
           />
         </div>
-      </div>
+      </section>
 
 
-      <div className="bg-[#fbf6f1] flex flex-col justify-between items-center h-200">
+      <section className="bg-[#fbf6f1] flex flex-col justify-between items-center h-200">
         <div>
-          <h1 className="text-5xl font-medium pt-20">My Specialities</h1>
+          <h2 className="text-5xl font-medium pt-20">My Specialities</h2>
         </div>
         <div className="bg-[#fbf6f1] h-9/12 w-full flex flex-row px-20 py-8 gap-5">
-          <div className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
             <p className="text-lg px-5 py-3">Self-Esteem</p>
             <p className="text-sm px-5 py-3">Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.</p>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -54,9 +64,9 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </article>
 
-          <div className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
             <p className="text-lg px-5 py-3">Relationships</p>
             <p className="text-sm px-5 py-3">Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.</p>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -67,9 +77,9 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </article>
 
-          <div className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
             <p className="text-lg px-5 py-3">Burnout</p>
             <p className="text-sm px-5 py-3">Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.</p>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -80,11 +90,11 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div className="bg-[#e5e0da] flex flex-row justify-center items-center h-210">
+      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-210">
         <div className="relative h-full w-1/2">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/a77b422e-33ac-47b2-825f-293d33884041/valeriia-miller-5jR4rAMs5tk-unsplash+%281%29.jpg?format=1500w"
@@ -109,7 +119,7 @@ export default function Home() {
           <button className="bg-transparent w-full border-t border-[#223614]/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">WORK WITH ME</button>
         </div>
 
-      </div>
+      </section>
     </main >
   );
 }
