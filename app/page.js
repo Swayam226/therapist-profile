@@ -1,6 +1,8 @@
 // import Counter from "@/components/Counter";
 // import Header from "@/components/header";
 import Image from "next/image";
+import Faq from "@/components/Faq";
+import ProfBackground from "@/components/ProfBackground";
 
 export const metadata = {
   title: "Therapy in Minneapolis | Live Your Life in Full Bloom",
@@ -151,6 +153,37 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+
+      <section className="bg-[#fbf6f1] flex flex-row justify-center items-center h-200 gap-25">
+        <div className="relative h-158 w-110 mb-30">
+          <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
+            <Image
+              src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/3a7e28f0-28fd-47cd-9857-6c415afed795/myxa69-APKZU4NJcgs-unsplash.jpg?format=2500w"
+              fill
+              priority
+              className="object-cover"
+              alt="main"
+            />
+          </div>
+        </div>
+
+        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-7 mb-30">
+          <h2 className="text-6xl">FAQs</h2>
+          <Faq />
+        </div>
+      </section>
+
+      <section className="bg-[#e5e0da] h-150 flex flex-col items-center justify-center gap-10">
+        <h2 className="text-5xl">My Professional Background</h2>
+        <ProfBackground />
+      </section>
+
+      <section className="bg-[#7e7b46] text-[#e5e0da] h-120 flex flex-col gap-8 justify-center items-center">
+        <h2 className="text-5xl">Get Started Today.</h2>
+        <p className="text-xl max-w-170 text-center">Ready to take the first step towards a happier, healthier you?
+          Contact me to book your first session. I look forward to starting this therapeutic journey with you.</p>
+        <button className="bg-transparent w-52 border border-white/80 h-12 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#e5e0da] hover:text-[#7e7b46] cursor-pointer">GET IN TOUCH</button>
       </section>
     </main >
   );
