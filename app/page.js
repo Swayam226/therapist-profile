@@ -219,12 +219,12 @@ export default function Home() {
         <ProfBackground />
       </section>
 
-      <section className="bg-cta text-[#e5e0da] h-120 flex flex-col gap-8 justify-center items-center">
+      <section className="bg-cta text-surface h-120 flex flex-col gap-8 justify-center items-center">
         <Reveal><h2 className="text-5xl">Get Started Today.</h2></Reveal>
         <Reveal><p className="text-xl max-w-170 text-center">Ready to take the first step towards a happier, healthier you?
           Contact me to book your first session. I look forward to starting this therapeutic journey with you.</p></Reveal>
 
-        <button className="bg-transparent w-52 border border-white/80 h-12 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-surface hover:text-[#7e7b46] cursor-pointer">GET IN TOUCH &#x2192;</button>
+        <button className="bg-transparent w-52 border border-white/80 h-12 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-surface hover:text-cta cursor-pointer">GET IN TOUCH &#x2192;</button>
       </section>
 
       <section className="w-full h-90 bg-main text-brand flex flex-row justify-between items-center">

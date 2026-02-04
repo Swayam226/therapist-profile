@@ -23,7 +23,7 @@ export default function Faq() {
         <div className="w-full">
 
             {faqs.map((item, i) => (
-                <div key={i} className="border-t border-[#223614]/50">
+                <div key={i} className="border-t border-brand/50">
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
@@ -51,7 +51,7 @@ export default function Faq() {
 
                 </div>
             ))}
-            <div className="border-t border-[#223614]/50" />
+            <div className="border-t border-brand/50" />
 
         </div>
     );
