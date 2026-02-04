@@ -15,8 +15,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="text-[#223614]">
-      <section className="bg-[#fbf6f1] w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular">
+    <main className="text-brand">
+      <section className="bg-main w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular">
 
         <div className="relative ml-14 h-full w-145 overflow-hidden rounded-t-[999px]">
           <Reveal className="block w-full h-full">
@@ -35,21 +35,21 @@ export default function Home() {
             <p className="mt-6 text-lg">Therapy for adults in Minneapolis, MN</p>
           </Reveal>
           <Reveal>
-            <button className="mt-10 border border-[#223614] px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">
+            <button className="mt-10 border border-brand px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-brand hover:text-surface cursor-pointer">
               Connect with me &#x2192;
             </button>
           </Reveal>
         </div>
       </section>
 
-      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-175">
+      <section className="bg-surface flex flex-row justify-center items-center h-175">
         <div className="h-full w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-3xl px-16 pt-52">
             <Reveal><h2 className="font-medium text-6xl">Live a fulfilling life.</h2></Reveal>
             <Reveal><p className="mt-8 font-medium text-lg">Life can be challenging—especially when you're trying to balance your personal and professional life. </p></Reveal>
             <Reveal><p className="mt-6 font-medium text-lg">It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-[#223614]/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">GET IN TOUCH &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-brand/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-brand hover:text-surface cursor-pointer">GET IN TOUCH &#x2192;</button>
         </div>
         <div className="relative h-full w-1/2">
           <Reveal className="block w-full h-full">
@@ -67,13 +67,13 @@ export default function Home() {
       </section>
 
 
-      <section className="bg-[#fbf6f1] flex flex-col justify-between items-center h-200">
+      <section className="bg-main flex flex-col justify-between items-center h-200">
         <div>
           <h2 className="text-5xl font-medium pt-20">My Specialities</h2>
         </div>
-        <div className="bg-[#fbf6f1] h-9/12 w-full flex flex-row px-20 py-8 gap-5">
+        <div className="bg-main h-9/12 w-full flex flex-row px-20 py-8 gap-5">
 
-          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-surface h-125 w-1/3 flex flex-col">
             <Reveal><p className="text-lg px-5 py-3">Self-Esteem</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-surface h-125 w-1/3 flex flex-col">
             <Reveal><p className="text-lg px-5 py-3">Relationships</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-[#e5e0da] h-125 w-1/3 flex flex-col">
+          <article className="bg-surface h-125 w-1/3 flex flex-col">
             <Reveal><p className="text-lg px-5 py-3">Burnout</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-210">
+      <section className="bg-surface flex flex-row justify-center items-center h-210">
         <div className="relative h-full w-1/2">
           <Reveal className="block w-full h-full"></Reveal>
           <Image
@@ -133,7 +133,7 @@ export default function Home() {
             className="object-cover"
           />
         </div>
-        <div className="bg-[#c2bfcb] h-full w-1/2 flex flex-col justify-between items-start">
+        <div className="bg-panel h-full w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-3xl px-16 pt-42">
             <Reveal><h2 className="font-medium text-5xl max-w-150">You don't have to do this all alone.</h2></Reveal>
             <Reveal><p className="mt-8 font-medium text-xl">If you are facing any of these, there's hope:</p></Reveal>
@@ -146,16 +146,16 @@ export default function Home() {
             </ul></Reveal>
             <Reveal><p className="mt-10 font-medium text-xl">With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-[#223614]/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">WORK WITH ME &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-brand/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-brand hover:text-surface cursor-pointer">WORK WITH ME &#x2192;</button>
         </div>
       </section>
 
-      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-225 gap-25">
+      <section className="bg-surface flex flex-row justify-center items-center h-225 gap-25">
         <div className="w-2/5 h-full flex flex-col justify-center items-start gap-7 mb-30">
           <Reveal><h2 className="text-6xl">Hi, I'm Lilac</h2></Reveal>
           <Reveal><p className="max-w-165 font-medium text-xl leading-8">I'm committed to providing a safe and supportive environment where we can explore your thoughts, feelings, and behaviors. With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p></Reveal>
           <div className="flex justify-center items-center w-full pr-20">
-            <button className="mt-10 border border-[#223614] px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">
+            <button className="mt-10 border border-brand px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-brand hover:text-surface cursor-pointer">
               LET'S CHAT &#x2192;
             </button>
           </div>
@@ -191,7 +191,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#fbf6f1] flex flex-row justify-center items-center h-200 gap-25">
+      <section className="bg-main flex flex-row justify-center items-center h-200 gap-25">
         <div className="relative h-158 w-110 mb-30">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
@@ -214,20 +214,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#e5e0da] h-150 flex flex-col items-center justify-center gap-10">
+      <section className="bg-surface h-150 flex flex-col items-center justify-center gap-10">
         <Reveal><h2 className="text-5xl">My Professional Background</h2></Reveal>
         <ProfBackground />
       </section>
 
-      <section className="bg-[#7e7b46] text-[#e5e0da] h-120 flex flex-col gap-8 justify-center items-center">
+      <section className="bg-cta text-[#e5e0da] h-120 flex flex-col gap-8 justify-center items-center">
         <Reveal><h2 className="text-5xl">Get Started Today.</h2></Reveal>
         <Reveal><p className="text-xl max-w-170 text-center">Ready to take the first step towards a happier, healthier you?
           Contact me to book your first session. I look forward to starting this therapeutic journey with you.</p></Reveal>
 
-        <button className="bg-transparent w-52 border border-white/80 h-12 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#e5e0da] hover:text-[#7e7b46] cursor-pointer">GET IN TOUCH &#x2192;</button>
+        <button className="bg-transparent w-52 border border-white/80 h-12 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-surface hover:text-[#7e7b46] cursor-pointer">GET IN TOUCH &#x2192;</button>
       </section>
 
-      <section className="w-full h-90 bg-[#fbf6f1] text-[#223614] flex flex-row justify-between items-center">
+      <section className="w-full h-90 bg-main text-brand flex flex-row justify-between items-center">
         <div className="flex flex-col gap-7 justify-center items-start px-10">
           <Reveal><h1 className="text-5xl">
             Lilac Template

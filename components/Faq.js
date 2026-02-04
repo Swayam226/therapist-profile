@@ -34,7 +34,7 @@ export default function Faq() {
                             className={`text-4xl transition-transform duration-300 ${open === i ? "rotate-45" : ""
                                 }`}
                         >
-                            +
+                            &#43;
                         </span>
                         <span className="text-3xl font-medium">{item.q}</span>
 
