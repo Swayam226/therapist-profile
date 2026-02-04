@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/header";
 import localFont from "next/font/local";
+import Footer from "@/components/footer";
 
 
 export const metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
