@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react"
+import Reveal from "./Reveal";
 
 const history = [
     {
@@ -36,7 +37,7 @@ export default function ProfBackground() {
                         >
                             +
                         </span>
-                        <span className="text-3xl font-regular">{item.q}</span>
+                        <Reveal><span className="text-3xl font-regular">{item.q}</span></Reveal>
 
                     </button>
 
