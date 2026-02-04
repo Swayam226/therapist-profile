@@ -118,7 +118,39 @@ export default function Home() {
           </div>
           <button className="bg-transparent w-full border-t border-[#223614]/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">WORK WITH ME</button>
         </div>
+      </section>
 
+      <section className="bg-[#e5e0da] flex flex-row justify-center items-center h-225 gap-25">
+        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-7 mb-30">
+          <h2 className="text-6xl">Hi, I'm Lilac</h2>
+          <p className="max-w-165 font-medium text-xl leading-8">I'm committed to providing a safe and supportive environment where we can explore your thoughts, feelings, and behaviors. With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p>
+          <div className="flex justify-center items-center w-full pr-20">
+            <button className="mt-10 border border-[#223614] px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">
+              LET'S CHAT
+            </button>
+          </div>
+        </div>
+
+        <div className="relative h-158 w-110 mb-30">
+          <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
+            <Image
+              src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/9a77a6f2-1c50-4582-a5c1-5ec0dc2e94e8/daiga-ellaby-Ct6LBZHaOSc-unsplash.jpg?format=2500w"
+              fill
+              priority
+              className="object-cover"
+              alt="main"
+            />
+          </div>
+
+          <div className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full overflow-hidden">
+            <Image
+              src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/9f889e1b-ba2b-4a6d-92e9-767dd3db67ae/lilac+template+white+lilac.jpeg?format=1500w"
+              fill
+              className="object-cover"
+              alt="circle"
+            />
+          </div>
+        </div>
       </section>
     </main >
   );
