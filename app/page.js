@@ -4,6 +4,7 @@ import Image from "next/image";
 import Faq from "@/components/Faq";
 import ProfBackground from "@/components/ProfBackground";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 
 export const metadata = {
   title: "Therapy in Minneapolis | Live Your Life in Full Bloom",
@@ -16,17 +17,28 @@ export default function Home() {
   return (
     <main className="text-[#223614]">
       <section className="bg-[#fbf6f1] w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular">
+
         <div className="relative ml-14 h-full w-145 overflow-hidden rounded-t-[999px]">
-          <Image src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/08197a74-c045-4a19-a7c9-0f85c1032bc4/daiga-ellaby-M2P08N9zi2k-unsplash.jpg" priority fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw"
-            alt="Bright therapy office with natural light"
-          />
+          <Reveal className="block w-full h-full">
+            <div className="absolute inset-0">
+              <Image src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/08197a74-c045-4a19-a7c9-0f85c1032bc4/daiga-ellaby-M2P08N9zi2k-unsplash.jpg" priority fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw"
+                alt="Bright therapy office with natural light"
+              />
+            </div>
+          </Reveal>
         </div>
         <div className="h-full ml-42 pt-48 max-w-xl flex items-center flex-col">
-          <h1 className="text-7xl font-medium leading-tight max-w-md text-center">Live your life in full bloom</h1>
-          <p className="mt-6 text-lg">Therapy for adults in Minneapolis, MN</p>
-          <button className="mt-10 border border-[#223614] px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">
-            Connect with me
-          </button>
+          <Reveal>
+            <h1 className="text-7xl font-medium leading-tight max-w-md text-center">Live your life in full bloom</h1>
+          </Reveal>
+          <Reveal>
+            <p className="mt-6 text-lg">Therapy for adults in Minneapolis, MN</p>
+          </Reveal>
+          <Reveal>
+            <button className="mt-10 border border-[#223614] px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-[#223614] hover:text-[#fbf6f1] cursor-pointer">
+              Connect with me
+            </button>
+          </Reveal>
         </div>
       </section>
 

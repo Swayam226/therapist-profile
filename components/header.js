@@ -1,6 +1,8 @@
 "use client"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+// import Reveal from "./Reveal";
+
 
 export default function Header() {
     const [hidden, setHidden] = useState(false);
