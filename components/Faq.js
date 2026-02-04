@@ -23,7 +23,7 @@ export default function Faq() {
         <div className="w-full">
 
             {faqs.map((item, i) => (
-                <div key={i} className="border-t border-brand/50">
+                <div key={i} className="border-t border-moss/50">
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
@@ -41,7 +41,7 @@ export default function Faq() {
                     </button>
 
                     <div
-                        className={`overflow-hidden transition-all duration-300 ${open === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                        className={`overflow-hidden transition-all duration-600 ${open === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                             }`}
                     >
                         <p className="pb-6 pr-20 text-lg">
@@ -51,7 +51,7 @@ export default function Faq() {
 
                 </div>
             ))}
-            <div className="border-t border-brand/50" />
+            <div className="border-t border-moss/50" />
 
         </div>
     );

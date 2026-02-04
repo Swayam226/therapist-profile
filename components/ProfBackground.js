@@ -24,7 +24,7 @@ export default function ProfBackground() {
         <div className="w-1/2">
 
             {history.map((item, i) => (
-                <div key={i} className="border-t border-[#223614]/50">
+                <div key={i} className="border-t border-ink/50">
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
@@ -42,7 +42,7 @@ export default function ProfBackground() {
                     </button>
 
                     <div
-                        className={`overflow-hidden transition-all duration-300 ${open === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                        className={`overflow-hidden transition-all duration-600 ${open === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                             }`}
                     >
                         <p className="pb-6 pr-20 text-lg">

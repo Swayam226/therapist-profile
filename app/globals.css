@@ -1,13 +1,23 @@
 @import "tailwindcss";
-
 @theme {
-  --color-brand: #223614;
-  --color-main: #fbf6f1;
-  --color-surface: #e5e0da;
-  --color-panel: #c2bfcb;
-  --color-cta: #7e7b46;
+  --color-ink: #1f2933;
+  --color-sand: #faf7f3;
+  --color-clay: #e8e1d9;
+  --color-panel: #cfc7be;
+  --color-moss: #3a5a40;
+  --color-blush: #cfa6a0;
+
+  --font-family-sans: var(--font-inter);
+  --font-family-serif: var(--font-playfair);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: var(--font-playfair);
+}
+
+h1,
+h2 {
+  letter-spacing: -0.02em;
 }
