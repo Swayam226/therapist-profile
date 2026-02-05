@@ -17,7 +17,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="text-ink">
-      <section className="bg-sand w-full min-h-screen md:h-220 flex flex-col md:flex-row pt-24 overflow-x-hidden items-center font-regular border-t border-ink/5
+      <section className="bg-sand w-full min-h-screen md:h-220 flex flex-col md:flex-row pt-40 md:pt-24 overflow-x-hidden items-center font-regular border-t border-ink/5
 ">
         <div className="relative md:ml-14 h-76 md:h-full w-52 md:w-145 overflow-hidden rounded-t-[999px]">
           <Reveal className="block w-full h-full">
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       <section className="bg-moss text-sand flex flex-col md:flex-row justify-center items-center min-h-screen md:h-175">
-        <div className="order-second md:order-first h-full w-full md:w-1/2 flex flex-col justify-between items-start">
+        <div className="order-last md:order-first h-full w-full md:w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-4xl px-10 md:pt-52">
             <Reveal><h2 className="font-medium text-4xl md:text-6xl pb-6">Tame your Restless Mind.</h2></Reveal>
             <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-lg leading-loose">Feeling functional outside while dealing with unsolved issues can impact your relationships, confidence and safety.</p></Reveal>
@@ -240,7 +240,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-clay flex flex-col md:flex-row justify-center items-center h-220 md:h-250 gap-25">
+      <section className="bg-moss text-sand h-120 md:h-150 flex flex-col items-center justify-center gap-10">
+        <Reveal><h2 className="text-4xl md:text-5xl text-center font-medium">My Professional Background</h2></Reveal>
+        <ProfBackground />
+      </section>
+
+
+      <section className="bg-sand flex flex-col md:flex-row justify-center items-center h-220 md:h-250 gap-25">
         <div className="relative h-176 md:h-158 w-52 md:w-110 md:mb-30 mt-15 md:mt-15">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
@@ -269,12 +275,6 @@ export default function Home() {
       </section>
 
 
-
-      <section className="bg-sand h-120 md:h-150 flex flex-col items-center justify-center gap-10">
-        <Reveal><h2 className="text-4xl md:text-5xl text-center font-medium">My Professional Background</h2></Reveal>
-        <ProfBackground />
-      </section>
-
       <section className="bg-moss text-sand h-120 flex flex-col gap-8 px-5 md:px-0 justify-center text-center items-center">
         <Reveal><h2 className="text-4xl md:text-5xl font-medium">Choose Therapy. Choose Yourself.</h2></Reveal>
         <Reveal><p className="text-base md:text-xl max-w-170 text-center font-regular">Do you want to take your first step into becoming the best version of yourself? If yes, I am more than excited to begin this journey of self-healing with you.</p></Reveal>
@@ -282,26 +282,26 @@ export default function Home() {
         <button className="bg-transparent w-66 border border-white/80 h-14 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-clay hover:text-moss cursor-pointer">GET IN TOUCH WITH US &#x2192;</button>
       </section>
 
-      <section className="w-full h-60 md:h-90 bg-sand text-ink flex flex-row justify-center md:justify-between items-center">
-        <div className="flex flex-col gap-2 md:gap-7 justify-center items-start px-6">
-          <Reveal><h1 className="text-lg md:text-5xl">
+      <section className="w-full h-160 md:h-90 bg-sand text-ink flex flex-col md:flex-row justify-center md:justify-between items-center">
+        <div className="flex flex-col gap-4 md:gap-7 justify-center items-center text-center md:items-start px-6 pt-4 md:pt-0">
+          <Reveal><h1 className="text-2xl md:text-5xl font-medium">
             Dr. Maya Reynolds, PsyD
           </h1></Reveal>
-          <Reveal><p className="text-xs md:text-xl max-w-60">123th Street 45 W, Santa Monica, CA 90401.
+          <Reveal><p className="text-lg md:text-xl max-w-60">123th Street 45 W, Santa Monica, CA 90401.
           </p></Reveal>
-          <Reveal><p className="text-xs md:text-xl max-w-60">drmayarey@example.com
+          <Reveal><p className="text-lg md:text-xl max-w-60">drmayarey@example.com
             (555) 555-5555</p></Reveal>
         </div>
-        <div className="flex flex-col justify-center md:justify-start h-54 gap-5 md:pl-100 pl-10">
-          <Reveal><h1 className="text-base md:text-4xl pb-6 md:pb-0">Hours</h1></Reveal>
-          <span className="text-xs md:text-xl max-w-30 md:max-w-40">Monday - Friday 10am - 6pm</span>
+        <div className="flex flex-col justify-center md:justify-start items-center md:items-start h-54 gap-5 md:pl-100">
+          <Reveal><h1 className="font-medium text-2xl md:text-4xl">Hours</h1></Reveal>
+          <div className="text-base md:text-xl max-w-40 text-center md:text-left">Monday - Friday 10am - 6pm</div>
         </div>
 
-        <div className="flex flex-col gap-3 md:gap-5 px-6 h-54 justify-center md:justify-start">
-          <Reveal><h1 className="text-base md:text-4xl pb-6 md:pb-0">Find</h1></Reveal>
-          <Link href="/" className="text-xs md:text-xl underline">Home</Link>
-          <Link href="/contact" className="text-xs md:text-xl underline">Contact</Link>
-          <Link href="/blog" className="text-xs md:text-xl underline">Blog</Link>
+        <div className="flex flex-col gap-3 md:gap-5 px-6 h-54 justify-center items-center md:items-end md:justify-start">
+          <Reveal><h1 className="text-2xl md:text-4xl font-medium text-center">Find</h1></Reveal>
+          <Link href="/" className="text-lg md:text-xl underline">Home</Link>
+          <Link href="/contact" className="text-lg md:text-xl underline">Contact</Link>
+          <Link href="/blog" className="text-lg md:text-xl underline">Blog</Link>
         </div>
 
       </section >

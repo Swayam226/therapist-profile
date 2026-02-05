@@ -24,7 +24,7 @@ export default function ProfBackground() {
         <div className="w-full px-8 md:px-0 md:w-1/2">
 
             {history.map((item, i) => (
-                <div key={i} className="border-t border-ink/50">
+                <div key={i} className="border-t border-clay/50">
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
@@ -52,7 +52,7 @@ export default function ProfBackground() {
 
                 </div>
             ))}
-            <div className="border-t border-[#223614]/50" />
+            <div className="border-t border-clay/50" />
 
         </div>
     );
