@@ -24,8 +24,8 @@ export default function Header() {
     }, [lastScrollY])
 
     return (
-        <nav className={`w-full overflow-x-hidden h-18 bg-transparent text-ink flex flex-row justify-between items-center fixed top-0 left-0 z-50 transition-transform duration-500 ease-in-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
-            <span className="pl-14 text-4xl font-medium"><Link href="/">Lilac Template</Link></span>
+        <nav className={`w-full overflow-x-hidden h-18 bg-transparent text-ink flex flex-row justify-between items-center fixed top-0 left-0 z-50 transition-transform duration-1200 ease-in-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+            <span className="pl-14 text-3xl font-medium"><Link href="/">Dr. Maya Reynolds, PsyD</Link></span>
             <div className="pr-16 text-xl flex flex-row gap-10">
                 <span><Link href="/blog">Blog</Link></span>
                 <span><Link href="/contact">Contact</Link></span>

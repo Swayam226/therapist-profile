@@ -4,16 +4,16 @@ import Reveal from "./Reveal";
 
 const history = [
     {
-        q: "Education",
-        a: "Yes — I accept most major insurance providers. Reach out and we’ll confirm your coverage."
+        q: "Profession",
+        a: "Licensed Clinical Psychologist (PsyD), providing therapy for adults in Santa Monica, California, with a focus on anxiety, trauma, and burnout."
     },
     {
-        q: "Licensure",
-        a: "Session rates vary depending on length and type. Contact me and I’ll share full details."
+        q: "Care Approach",
+        a: "Evidence-Based & Trauma-Informed Care, trained in CBT, EMDR, mindfulness-based practices, and body-oriented techniques to support both emotional insight and nervous system regulation."
     },
     {
-        q: "Certifications",
-        a: "Availability changes regularly. Please get in touch for current openings."
+        q: "Session Type",
+        a: "Collaborative, Client-Centered Approach, sessions are paced with care and grounded in safety, respect, and active collaboration—supporting long-term growth, resilience, and self-understanding."
     },
 ];
 

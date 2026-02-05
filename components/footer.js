@@ -10,10 +10,10 @@ export default function Footer() {
                     <Link className="underline" href="/terms-conditions">Website Terms & Conditions</Link>
                     <Link className="underline" href="/disclaimer">Disclaimer</Link>
                 </div>
-                <p>Website Template Credits: <Link className="underline" href="https://www.gobloomcreative.com/">Go Bloom Creative</Link></p>
+                <p>Webpage Credits: <Link className="underline" href="https://www.github.com/Swayam226">Swayam Kumar</Link></p>
             </div>
             <div>
-                <p>All Rights Reserved © 2024 Your Business Name Here, LLC.</p>
+                <p>All Rights Reserved © 2026 Dr. Maya Reynolds</p>
             </div>
         </footer>
     )

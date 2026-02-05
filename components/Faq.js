@@ -3,16 +3,21 @@ import { useState } from "react"
 
 const faqs = [
     {
-        q: "Do you take insurance?",
-        a: "Yes — I accept most major insurance providers. Reach out and we’ll confirm your coverage."
+        q: "Is this for me?",
+        a: "Yes - if you are dealing with chronic stress, anxiety, overthinking, trauma or professional burnout due to work environment pressure then my therapy might be the support you thought you wanted."
     },
     {
-        q: "What are your rates?",
-        a: "Session rates vary depending on length and type. Contact me and I’ll share full details."
+        q: "What is your approach to therapy?",
+        a: "My approach is warm, collaborative, and grounded. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I also integrate evidence-based methods including cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques."
     },
     {
-        q: "Do you have any openings?",
-        a: "Availability changes regularly. Please get in touch for current openings."
+        q: "What is the price range?",
+        a: "Nil, for the first session. For a detailed pricing plans, please give us a call on the number mentioned at the contact section below."
+    },
+    {
+
+        q: "Do you offer Telehealth sessions?",
+        a: "Yes. I offer in-person therapy from my Santa Monica office as well as secure telehealth sessions for clients located in California.",
     },
 ];
 
@@ -41,7 +46,7 @@ export default function Faq() {
                     </button>
 
                     <div
-                        className={`overflow-hidden transition-all duration-600 ${open === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                        className={`overflow-hidden transition-all duration-600 ${open === i ? "max-h-50 opacity-100" : "max-h-0 opacity-0"
                             }`}
                     >
                         <p className="pb-6 pr-20 text-lg">
