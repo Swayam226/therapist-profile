@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Playfair_Display } from "next/font/google";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} ${playfair.variable} antialiased font-sans font-normal`}>
+        <Analytics />
         <Header />
         {children}
         <Footer />
