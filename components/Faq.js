@@ -36,7 +36,7 @@ export default function Faq() {
                         >
                             &#43;
                         </span>
-                        <span className="text-3xl font-medium">{item.q}</span>
+                        <span className="text-3xl font-regular">{item.q}</span>
 
                     </button>
 

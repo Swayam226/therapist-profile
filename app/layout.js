@@ -1,8 +1,9 @@
 import "./globals.css";
 import Header from "@/components/header";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import Footer from "@/components/footer";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 
 export const metadata = {
@@ -10,9 +11,10 @@ export const metadata = {
   description: "A minimal, elegant website for Dr. Maya Reynolds",
 };
 
-const inter = Inter({
+const poppins = Poppins({
+  weight: ['400', '500', '700'],
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-poppins",
 });
 
 const playfair = Playfair_Display({
@@ -24,7 +26,7 @@ const playfair = Playfair_Display({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased font-sans font-normal`}>
+      <body className={`${poppins.className} ${playfair.variable} antialiased font-sans font-normal`}>
         <Header />
         {children}
         <Footer />

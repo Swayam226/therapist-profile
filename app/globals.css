@@ -1,14 +1,19 @@
 @import "tailwindcss";
-@theme {
-  --color-ink: #1f2933;
-  --color-sand: #faf7f3;
-  --color-clay: #e8e1d9;
-  --color-panel: #cfc7be;
-  --color-moss: #3a5a40;
-  --color-blush: #cfa6a0;
 
-  --font-family-sans: var(--font-inter);
-  --font-family-serif: var(--font-playfair);
+@layer theme {
+  @theme {
+    --color-ink: #1f2933;
+    --color-sand: #faf7f3;
+    --color-clay: #e8e1d9;
+    --color-panel: #cfc7be;
+    --color-moss: #3a5a40;
+    --color-blush: #cfa6a0;
+
+    /* --font-family-sans:
+      var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont,
+      sans-serif; */
+    --font-family-serif: var(--font-playfair);
+  }
 }
 
 h1,
