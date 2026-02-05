@@ -193,34 +193,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-sand flex flex-row justify-center items-center h-200 gap-25">
-        <div className="relative h-158 w-110 mb-30">
-          <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
-            <Reveal className="block w-full h-full">
-              <div className="absolute inset-0">
-                <Image
-                  src="/assets/faq.jpg"
-                  fill
-                  priority
-                  className="a light bulb depicting curiosity symbolizing FAQs"
-                  alt="main"
-                />
-              </div>
-            </Reveal>
-          </div>
-        </div>
-
-        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
-          <Reveal><h2 className="text-6xl font-medium">FAQs</h2></Reveal>
-          <Reveal><Faq /></Reveal>
-        </div>
-      </section>
-
-
-      <section className="bg-sand flex flex-row justify-center items-center h-200 gap-25">
-
-
-        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
+      <section className="bg-sand flex flex-row justify-center items-center h-250 gap-25">
+        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12">
           <Reveal>
             <h2 className="text-6xl font-medium">Our Office</h2>
           </Reveal>
@@ -230,7 +204,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="relative h-188 w-130 mb-60">
+        <div className="relative h-188 w-130">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
@@ -260,8 +234,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-clay flex flex-row justify-center items-center h-200 gap-25">
+        <div className="relative h-158 w-110 mb-30">
+          <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
+            <Reveal className="block w-full h-full">
+              <div className="absolute inset-0">
+                <Image
+                  src="/assets/faq.jpg"
+                  fill
+                  priority
+                  className="a light bulb depicting curiosity symbolizing FAQs"
+                  alt="main"
+                />
+              </div>
+            </Reveal>
+          </div>
+        </div>
 
-      <section className="bg-clay h-150 flex flex-col items-center justify-center gap-10">
+        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
+          <Reveal><h2 className="text-6xl font-medium">FAQs</h2></Reveal>
+          <Reveal><Faq /></Reveal>
+        </div>
+      </section>
+
+
+      <section className="bg-sand h-150 flex flex-col items-center justify-center gap-10">
         <Reveal><h2 className="text-5xl font-medium">My Professional Background</h2></Reveal>
         <ProfBackground />
       </section>
