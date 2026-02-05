@@ -17,9 +17,9 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="text-ink">
-      <section className="bg-sand w-full h-220 flex flex-row pt-24 overflow-x-hidden items-center font-regular border-t border-ink/5
+      <section className="bg-sand w-full min-h-screen md:h-220 flex flex-col md:flex-row pt-24 overflow-x-hidden items-center font-regular border-t border-ink/5
 ">
-        <div className="relative ml-14 h-full w-145 overflow-hidden rounded-t-[999px]">
+        <div className="relative md:ml-14 h-76 md:h-full w-52 md:w-145 overflow-hidden rounded-t-[999px]">
           <Reveal className="block w-full h-full">
             <div className="absolute inset-0">
               <Image src="/assets/break-free.jpg" priority fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw"
@@ -28,31 +28,33 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
-        <div className="h-full ml-42 pt-30 max-w-xl flex items-center flex-col">
+        <div className="h-full md:ml-42 pt-12 md:pt-30 max-w-xl flex items-center flex-col px-6 md:px-0">
           <Reveal>
-            <h1 className="text-7xl font-medium leading-tight w-2xl text-center font-serif">Break Free from <span className="italic">Anxiety</span> and <span className="italic">Trauma</span></h1>
+            <h1 className="text-4xl md:text-7xl font-medium leading-tight max-w-md text-center font-serif">
+              Break Free from <span className="italic">Anxiety</span> and <span className="italic">Trauma</span></h1>
           </Reveal>
           <Reveal>
-            <p className="mt-6 text-lg text-center max-w-90">Therapy for adults in Santa Monica, CA   Offering in-person and secure telehealth sessions</p>
+            <p className="mt-6 text-base md:text-lg text-center max-w-90">
+              Therapy for adults in Santa Monica, CA   Offering in-person and secure telehealth sessions</p>
           </Reveal>
           <Reveal>
-            <button className="mt-10 border border-moss px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
+            <button className="mt-8 md:mt-10 border border-moss px-6 md:px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
               SCHEDULE A FREE CONSULTATION &#x2192;
             </button>
           </Reveal>
         </div>
       </section>
 
-      <section className="bg-moss text-sand flex flex-row justify-center items-center h-175">
-        <div className="h-full w-1/2 flex flex-col justify-between items-start">
-          <div className="max-w-4xl px-10 pt-52">
-            <Reveal><h2 className="font-medium text-6xl pb-6">Tame your Restless Mind.</h2></Reveal>
-            <Reveal><p className="mt-8 font-regular text-lg leading-loose">Feeling functional outside while dealing with unsolved issues can impact your relationships, confidence and safety.</p></Reveal>
-            <Reveal><p className="mt-6 font-regular text-lg leading-loose">Dealing with internal turmoil can be very exhausting, I offer personalised help through proven scientific methods like CBT, EMDR and mindfulness to hep you understand yourself better.</p></Reveal>
+      <section className="bg-moss text-sand flex flex-col md:flex-row justify-center items-center min-h-screen md:h-175">
+        <div className="order-2 md:order-1 h-full w-full md:w-1/2 flex flex-col justify-between items-start">
+          <div className="max-w-4xl px-10 md:pt-52">
+            <Reveal><h2 className="font-medium text-4xl md:text-6xl pb-6">Tame your Restless Mind.</h2></Reveal>
+            <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-lg leading-loose">Feeling functional outside while dealing with unsolved issues can impact your relationships, confidence and safety.</p></Reveal>
+            <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-lg leading-loose">Dealing with internal turmoil can be very exhausting, I offer personalised help through proven scientific methods like CBT, EMDR and mindfulness to hep you understand yourself better.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-clay/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-md font-regular hover:bg-clay hover:text-moss cursor-pointer">SCHEDULE A FREE CONSULTATION &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-clay/80 h-16 md:h-18 mt-10 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm md:text-md font-regular hover:bg-clay hover:text-moss cursor-pointer">SCHEDULE A FREE CONSULTATION &#x2192;</button>
         </div>
-        <div className="relative h-full w-1/2">
+        <div className="relative top-0 h-100 pb-20 md:pb-0 md:h-full w-full md:w-1/2">
           <Reveal className="block w-full h-full">
             <div className="absolute inset-0">
               <Image
