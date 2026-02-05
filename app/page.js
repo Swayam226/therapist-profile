@@ -27,12 +27,12 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
-        <div className="h-full ml-42 pt-48 max-w-xl flex items-center flex-col">
+        <div className="h-full ml-42 pt-40 max-w-xl flex items-center flex-col">
           <Reveal>
-            <h1 className="text-7xl font-medium leading-tight max-w-md text-center font-serif ">Live your life in full bloom</h1>
+            <h1 className="text-7xl font-medium leading-tight max-w-md text-center font-serif">Be <span className="italic">Free</span> Be <span className="italic">Yourself</span></h1>
           </Reveal>
           <Reveal>
-            <p className="mt-6 text-lg">Therapy for adults in Minneapolis, MN</p>
+            <p className="mt-6 text-lg text-center max-w-90">Therapy for adults in Santa Monica, CA   Offering in-person and secure telehealth sessions</p>
           </Reveal>
           <Reveal>
             <button className="mt-10 border border-moss px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
@@ -42,14 +42,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-clay flex flex-row justify-center items-center h-175">
+      <section className="bg-moss text-sand flex flex-row justify-center items-center h-175">
         <div className="h-full w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-3xl px-16 pt-52">
             <Reveal><h2 className="font-medium text-6xl">Live a fulfilling life.</h2></Reveal>
             <Reveal><p className="mt-8 font-regular text-lg">Life can be challenging—especially when you're trying to balance your personal and professional life. </p></Reveal>
             <Reveal><p className="mt-6 font-regular text-lg">It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-moss/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-moss hover:text-sand cursor-pointer">GET IN TOUCH &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-clay/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-clay hover:text-moss cursor-pointer">GET IN TOUCH &#x2192;</button>
         </div>
         <div className="relative h-full w-1/2">
           <Reveal className="block w-full h-full">
@@ -133,7 +133,7 @@ export default function Home() {
             className="object-cover"
           />
         </div>
-        <div className="bg-panel h-full w-1/2 flex flex-col justify-between items-start">
+        <div className="bg-moss text-clay h-full w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-3xl px-16 pt-42">
             <Reveal><h2 className="font-medium text-5xl max-w-150">You don't have to do this all alone.</h2></Reveal>
             <Reveal><p className="mt-8 font-regular text-xl">If you are facing any of these, there's hope:</p></Reveal>
@@ -146,7 +146,7 @@ export default function Home() {
             </ul></Reveal>
             <Reveal><p className="mt-10 font-regular text-xl">With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-moss/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-moss hover:text-sand cursor-pointer">WORK WITH ME &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-sand/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-sand hover:text-moss cursor-pointer">WORK WITH ME &#x2192;</button>
         </div>
       </section>
 
