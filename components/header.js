@@ -39,7 +39,7 @@ export default function Header() {
                 </button>
 
                 {/* Logo */}
-                <span className=" pl-27 md:pl-14 text-lg md:text-3xl font-medium">
+                <span className=" pl-20 md:pl-14 text-lg md:text-3xl font-medium">
                     <Link href="/">Dr. Maya Reynolds, PsyD</Link>
                 </span>
 
