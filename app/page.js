@@ -59,7 +59,7 @@ export default function Home() {
             <div className="absolute inset-0">
               <Image
                 src="/assets/calm.jpg"
-                alt="a woman doing yoga to symbolize calmness"
+                alt="flowers and candles to indicate calmness"
                 fill
                 sizes="50vw"
                 className="object-cover"
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="absolute inset-0">
               <Image
                 src="/assets/support.jpg"
-                alt="second-pic"
+                alt="a hand coming for support"
                 fill
                 className="object-cover"
               />
@@ -178,7 +178,7 @@ export default function Home() {
                   fill
                   priority
                   className="object-cover"
-                  alt="main"
+                  alt="portrait of Dr. Maya Reynolds"
                 />
               </div>
             </Reveal>
@@ -190,7 +190,7 @@ export default function Home() {
                 <Image
                   src="/assets/sub-image-dr-maya.jpg"
                   fill
-                  className="object-cover"
+                  className="A book from a therapist"
                   alt="circle"
                 />
               </div>

@@ -39,7 +39,7 @@ export default function Header() {
                 </button>
 
                 {/* Logo */}
-                <span className="pl-20 md:pl-14 text-lg md:text-3xl font-medium">
+                <span className=" pl-27 md:pl-14 text-lg md:text-3xl font-medium">
                     <Link href="/">Dr. Maya Reynolds, PsyD</Link>
                 </span>
 
@@ -59,7 +59,7 @@ export default function Header() {
 
             {/* Mobile menu */}
             <div
-                className={`fixed top-18 left-0 w-screen bg-sand text-ink z-40 transition-all duration-500 ease-in-out md:hidden ${menuOpen
+                className={`fixed top-18 left-0 w-screen bg-sand text-ink z-40 transition-all duration-600 ease-in-out md:hidden ${menuOpen
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-4 pointer-events-none"
                     }`}
