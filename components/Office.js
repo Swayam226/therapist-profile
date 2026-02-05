@@ -49,7 +49,7 @@ export default function Office() {
                         className={`overflow-hidden transition-all duration-600 ${open === i ? "max-h-50 opacity-100" : "max-h-0 opacity-0"
                             }`}
                     >
-                        <p className="pb-6 pr-20 text-base md:text-lg">
+                        <p className="pb-6 pr-20 text-xs md:text-lg">
                             {item.a}
                         </p>
                     </div>
