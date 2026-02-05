@@ -65,12 +65,12 @@ export default function Header() {
                     }`}
             >
                 <div className="flex flex-col gap-6 py-8 px-6 text-xl border-t border-ink/10">
-                    <Link onClick={() => setMenuOpen(false)} href="/blog">
+                    <span className="cursor-pointer">
                         Blog
-                    </Link>
-                    <Link onClick={() => setMenuOpen(false)} href="/contact">
+                    </span>
+                    <span className="cursor-pointer">
                         Contact
-                    </Link>
+                    </span>
                 </div>
             </div>
         </>

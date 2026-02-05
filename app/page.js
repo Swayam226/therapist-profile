@@ -297,9 +297,9 @@ export default function Home() {
 
         <div className="flex flex-col gap-3 md:gap-5 px-6 h-54 justify-center items-center md:items-end md:justify-start">
           <Reveal><h1 className="text-2xl md:text-4xl font-medium text-center">Find</h1></Reveal>
-          <Link href="/" className="text-lg md:text-xl underline">Home</Link>
-          <Link href="/contact" className="text-lg md:text-xl underline">Contact</Link>
-          <Link href="/blog" className="text-lg md:text-xl underline">Blog</Link>
+          <span className="text-lg md:text-xl underline cursor-pointer">Home</span>
+          <span className="text-lg md:text-xl underline cursor-pointer">Contact</span>
+          <span className="text-lg md:text-xl underline cursor-pointer">Blog</span>
         </div>
 
       </section >
