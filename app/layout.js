@@ -7,8 +7,8 @@ import { Poppins } from "next/font/google";
 
 
 export const metadata = {
-  title: "Therapist Profile Site",
-  description: "A minimal, elegant website for Dr. Maya Reynolds",
+  title: "Anxiety and Burnout Therapy - Dr. Maya Reynolds, PsyD",
+  description: "Calm and supportive therapy for stress, trauma and burnout in Santa Monica, CA.",
 };
 
 const poppins = Poppins({

@@ -8,9 +8,9 @@ import Reveal from "@/components/Reveal";
 import Office from "@/components/Office";
 
 export const metadata = {
-  title: "Therapy in Minneapolis | Live Your Life in Full Bloom",
+  title: "Therapy in Santa Monica by Dr. Maya Reynolds, PsyD",
   description:
-    "Therapy for adults in Minneapolis helping with burnout, relationships, and self-esteem. Connect today.",
+    "Therapy for adults in Santa Monica helping with anxiety, trauma and burnout in a calm and safe environment",
 };
 
 
@@ -176,7 +176,6 @@ export default function Home() {
                 <Image
                   src="/assets/dr-maya.png"
                   fill
-                  priority
                   className="object-cover"
                   alt="portrait of Dr. Maya Reynolds"
                 />
@@ -217,7 +216,7 @@ export default function Home() {
                 <Image
                   src="/assets/office1.jpeg"
                   fill
-                  priority
+                  sizes="(max-width: 768px) 90vw, 50vw"
                   className="object-cover"
                   alt="Therapy office interior"
                 />
@@ -254,7 +253,6 @@ export default function Home() {
                 <Image
                   src="/assets/faq.jpg"
                   fill
-                  priority
                   className="object-cover"
                   alt="a light bulb depicting curiosity symbolizing FAQs"
                 />
