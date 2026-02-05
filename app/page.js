@@ -285,7 +285,7 @@ export default function Home() {
           <Reveal><h1 className="text-2xl md:text-5xl font-medium">
             Dr. Maya Reynolds, PsyD
           </h1></Reveal>
-          <Reveal><p className="text-lg md:text-xl max-w-60">123th Street 45 W, Santa Monica, CA 90401.
+          <Reveal><p className="text-lg md:text-xl max-w-60">123rd Street 45 W, Santa Monica, CA 90401.
           </p></Reveal>
           <Reveal><p className="text-lg md:text-xl max-w-60">drmayarey@example.com
             (555) 555-5555</p></Reveal>
