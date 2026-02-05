@@ -141,7 +141,7 @@ export default function Home() {
         </div>
         <div className="order-last md:order-first bg-moss text-clay h-full w-full md:w-1/2 flex flex-col justify-between items-start pt-10 md:pt-0">
           <div className="max-w-3xl px-8 md:px-16 md:pt-42">
-            <Reveal><h2 className="font-medium text-4xl md:text-5xl max-w-150">You don't deserve enduring any of this alone.</h2></Reveal>
+            <Reveal><h2 className="font-medium text-4xl md:text-5xl max-w-150 text-center md:text-left">You don't deserve enduring any of this alone.</h2></Reveal>
             <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-xl">Any of these could identify you: </p></Reveal>
             <Reveal><ul className="mt-6 md:mt-8 font-regular  text-base md:text-xl list-disc pl-10 flex flex-col gap-4">
               <li>Constant worry, anxiety or racing thoughts</li>
@@ -150,7 +150,7 @@ export default function Home() {
               <li>Feeling continously overwhelmed and exhausted</li>
               <li>Burdened by traumatic experiences from the past</li>
             </ul></Reveal>
-            <Reveal><p className="mt-6 mb-6 md:mb-0 md:mt-10 font-regular text-base md:text-xl">With support and collaboration, we will understand the root causes and build a system to manage yourself better.</p></Reveal>
+            <Reveal><p className="mt-6 mb-6 md:mb-0 md:mt-10 font-regular text-base md:text-xl text-center md:text-left">With support and collaboration, we will understand the root causes and build a system to manage yourself better.</p></Reveal>
           </div>
           <button className="bg-transparent w-full border-t border-sand/80 h-16 md:h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm
           md:text-md font-medium hover:bg-sand hover:text-moss cursor-pointer">SCHEDULE A FREE CONSULTATION &#x2192;</button>
@@ -159,9 +159,9 @@ export default function Home() {
 
       <section className="bg-clay flex flex-col md:flex-row justify-center items-center min-h-screen md:h-225 gap-25">
         <div className="order-last md:order-first w-full md:w-2/5 h-full flex flex-col justify-center items-start gap-9 mb-30 px-8 md:px-0">
-          <Reveal><h2 className="text-4xl md:text-6xl">Hi, I'm Dr. Maya Reynolds, PsyD</h2></Reveal>
-          <Reveal><p className="max-w-165 font-regular text-xl leading-8">I’m a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults navigating anxiety, trauma, and burnout.</p></Reveal>
-          <Reveal><p className="max-w-165 font-regular text-xl leading-8">I provide a warm, collaborative approach with my therapy where my clients feel respected, understood and involved in the process.</p></Reveal>
+          <Reveal><h2 className="text-4xl md:text-6xl md:text-left text-center">Hi, I'm Dr. Maya Reynolds, PsyD</h2></Reveal>
+          <Reveal><p className="max-w-165 font-regular  text-base md:text-xl leading-8 md:text-left text-center">I’m a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults navigating anxiety, trauma, and burnout.</p></Reveal>
+          <Reveal><p className="max-w-165 font-regular  text-base md:text-xl leading-8 md:text-left text-center">I provide a warm, collaborative approach with my therapy where my clients feel respected, understood and involved in the process.</p></Reveal>
           <div className="flex justify-center items-center w-full md:pr-20">
             <button className="md:mt-10 border border-moss md:px-8 px-6 py-4 md:py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
               SCHEDULE A FREE CONSULTATION NOW &#x2192;
