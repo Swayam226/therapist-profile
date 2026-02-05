@@ -21,23 +21,23 @@ export default function ProfBackground() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="w-1/2">
+        <div className="w-full px-8 md:px-0 md:w-1/2">
 
             {history.map((item, i) => (
                 <div key={i} className="border-t border-ink/50">
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
-                        className="w-full flex items-center justify-start gap-5 py-4"
+                        className="w-full flex items-center justify-start gap-5 py-2 md:py-4"
                     >
                         {/* for Plus and Cross */}
                         <span
-                            className={`text-4xl transition-transform duration-300 ${open === i ? "rotate-45" : ""
+                            className={`text-lg md:text-4xl transition-transform duration-300 ${open === i ? "rotate-45" : ""
                                 }`}
                         >
                             +
                         </span>
-                        <Reveal><span className="text-3xl font-regular">{item.q}</span></Reveal>
+                        <Reveal><span className="text-base md:text-3xl font-regular">{item.q}</span></Reveal>
 
                     </button>
 

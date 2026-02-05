@@ -199,8 +199,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-sand flex flex-col md:flex-row justify-center items-center h-250 gap-25">
-        <div className="order-last md:order-first w-full md:w-2/5 h-full flex flex-col justify-start md:justify-center items-start px-8 md:px-0 gap-12 md:gap-12 pt-10 md:pb-0">
+      <section className="bg-sand flex flex-col md:flex-row justify-center items-center h-220 md:h-250 gap-25">
+        <div className="order-last md:order-first w-full md:w-2/5 h-full flex flex-col justify-start md:justify-center items-center md:items-start px-8 md:px-0 gap-12 pt-10 md:pb-0">
           <Reveal>
             <h2 className="text-4xl md:text-6xl font-medium">Our Office</h2>
           </Reveal>
@@ -240,8 +240,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-clay flex flex-col md:flex-row justify-center items-center h-200 gap-25">
-        <div className="relative h-76 md:h-158 w-52 md:w-110 mb-30 mt-15">
+      <section className="bg-clay flex flex-col md:flex-row justify-center items-center h-220 md:h-250 gap-25">
+        <div className="relative h-176 md:h-158 w-52 md:w-110 md:mb-30 mt-15 md:mt-15">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
@@ -257,45 +257,51 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
-          <Reveal><h2 className="text-4xl md:text-6xl font-medium">FAQs</h2></Reveal>
-          <Reveal><Faq /></Reveal>
+        <div className="w-full md:w-2/5 h-full flex flex-col justify-start md:justify-center items-center md:items-start gap-12 md:mb-30 px-8 md:px-0">
+          <Reveal>
+            <h2 className="text-4xl md:text-6xl font-medium">FAQs</h2>
+          </Reveal>
+
+          <Reveal>
+            <Faq />
+          </Reveal>
         </div>
       </section>
 
 
-      <section className="bg-sand h-150 flex flex-col items-center justify-center gap-10">
-        <Reveal><h2 className="text-5xl font-medium">My Professional Background</h2></Reveal>
+
+      <section className="bg-sand h-120 md:h-150 flex flex-col items-center justify-center gap-10">
+        <Reveal><h2 className="text-4xl md:text-5xl text-center font-medium">My Professional Background</h2></Reveal>
         <ProfBackground />
       </section>
 
-      <section className="bg-moss text-sand h-120 flex flex-col gap-8 justify-center items-center">
-        <Reveal><h2 className="text-5xl font-medium">Choose Therapy. Choose Yourself.</h2></Reveal>
-        <Reveal><p className="text-xl max-w-170 text-center font-regular">Do you want to take your first step into becoming the best version of yourself? If yes, I am more than excited to begin this journey of self-healing with you.</p></Reveal>
+      <section className="bg-moss text-sand h-120 flex flex-col gap-8 px-5 md:px-0 justify-center text-center items-center">
+        <Reveal><h2 className="text-4xl md:text-5xl font-medium">Choose Therapy. Choose Yourself.</h2></Reveal>
+        <Reveal><p className="text-base md:text-xl max-w-170 text-center font-regular">Do you want to take your first step into becoming the best version of yourself? If yes, I am more than excited to begin this journey of self-healing with you.</p></Reveal>
 
         <button className="bg-transparent w-66 border border-white/80 h-14 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-clay hover:text-moss cursor-pointer">GET IN TOUCH WITH US &#x2192;</button>
       </section>
 
-      <section className="w-full h-90 bg-sand text-ink flex flex-row justify-between items-center">
-        <div className="flex flex-col gap-7 justify-center items-start px-10">
-          <Reveal><h1 className="text-5xl">
+      <section className="w-full h-60 md:h-90 bg-sand text-ink flex flex-row justify-center md:justify-between items-center">
+        <div className="flex flex-col gap-2 md:gap-7 justify-center items-start px-6">
+          <Reveal><h1 className="text-lg md:text-5xl">
             Dr. Maya Reynolds, PsyD
           </h1></Reveal>
-          <Reveal><p className="text-xl max-w-60">123th Street 45 W, Santa Monica, CA 90401.
+          <Reveal><p className="text-xs md:text-xl max-w-60">123th Street 45 W, Santa Monica, CA 90401.
           </p></Reveal>
-          <Reveal><p className="text-xl max-w-60">drmayarey@example.com
+          <Reveal><p className="text-xs md:text-xl max-w-60">drmayarey@example.com
             (555) 555-5555</p></Reveal>
         </div>
-        <div className="flex flex-col justify-start h-54 gap-7 pl-100">
-          <Reveal><h1 className="text-4xl">Hours</h1></Reveal>
-          <span className="text-xl max-w-40">Monday - Friday 10am - 6pm</span>
+        <div className="flex flex-col justify-center md:justify-start h-54 gap-5 md:pl-100 pl-10">
+          <Reveal><h1 className="text-base md:text-4xl pb-6 md:pb-0">Hours</h1></Reveal>
+          <span className="text-xs md:text-xl max-w-30 md:max-w-40">Monday - Friday 10am - 6pm</span>
         </div>
 
-        <div className="flex flex-col gap-5 px-10 h-54">
-          <Reveal><h1 className="text-4xl">Find</h1></Reveal>
-          <Link href="/" className="text-xl underline">Home</Link>
-          <Link href="/contact" className="text-xl underline">Contact</Link>
-          <Link href="/blog" className="text-xl underline">Blog</Link>
+        <div className="flex flex-col gap-3 md:gap-5 px-6 h-54 justify-center md:justify-start">
+          <Reveal><h1 className="text-base md:text-4xl pb-6 md:pb-0">Find</h1></Reveal>
+          <Link href="/" className="text-xs md:text-xl underline">Home</Link>
+          <Link href="/contact" className="text-xs md:text-xl underline">Contact</Link>
+          <Link href="/blog" className="text-xs md:text-xl underline">Blog</Link>
         </div>
 
       </section >
