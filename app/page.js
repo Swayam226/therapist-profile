@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       <section className="bg-moss text-sand flex flex-col md:flex-row justify-center items-center min-h-screen md:h-175">
-        <div className="order-2 md:order-1 h-full w-full md:w-1/2 flex flex-col justify-between items-start">
+        <div className="order-second md:order-first h-full w-full md:w-1/2 flex flex-col justify-between items-start">
           <div className="max-w-4xl px-10 md:pt-52">
             <Reveal><h2 className="font-medium text-4xl md:text-6xl pb-6">Tame your Restless Mind.</h2></Reveal>
             <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-lg leading-loose">Feeling functional outside while dealing with unsolved issues can impact your relationships, confidence and safety.</p></Reveal>
@@ -70,13 +70,13 @@ export default function Home() {
       </section>
 
 
-      <section className="bg-sand flex flex-col justify-between items-center h-200">
+      <section className="bg-sand flex flex-col justify-between items-center min-h-screen md:h-200">
         <div>
-          <h2 className="text-5xl font-medium pt-20">My Services</h2>
+          <h2 className="text-4xl md:text-5xl font-medium pt-10 md:pt-20 md:pb-0 pb-10">My Services</h2>
         </div>
-        <div className="bg-sand h-9/12 w-full flex flex-row px-20 py-8 gap-5">
+        <div className="bg-sand h-9/12 md:w-full flex flex-col md:flex-row px-8 md:px-20 py-8 md:py-8 gap-5">
 
-          <article className="bg-clay h-125 w-1/3 flex flex-col">
+          <article className="bg-clay h-140 md:h-125 w-full md:w-1/3 flex flex-col border-2 border-gray-800 md:border-none">
             <Reveal><p className="text-lg px-5 py-5 font-medium">Trauma & Stess</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Traumatic experiences can linger your growth and present lifestyle. Slow Paced approach with focus on safety and stabalization will help you feel more regulated about your lives.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-clay h-125 w-1/3 flex flex-col">
+          <article className="bg-clay h-140 md:h-125 w-full md:w-1/3 flex flex-col border-2 border-gray-800 md:border-none">
             <Reveal><p className="text-lg px-5 py-5 font-medium">Anxiety & Panic</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Feeing on edge always can be very exhausting. Warm and Collaborative sessions with space of reflection can help you manage your anxiety and overcome it.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-clay h-125 w-1/3 flex flex-col">
+          <article className="bg-clay h-140 md:h-125 w-full md:w-1/3 flex flex-col border-2 border-gray-800 md:border-none">
             <Reveal><p className="text-lg px-5 py-5 font-medium">Professional Burnout & High Pressure Living</p></Reveal>
             <Reveal><p className="text-sm px-5 py-3">Professionals and high-achievers can feel overwhelmed. My Therapy provides a space to slow down, reconnect with yourself and develop more sustainable ways of living and working.</p></Reveal>
             <div className="relative w-76 h-76 mx-auto mt-10 overflow-hidden rounded-full">
@@ -126,46 +126,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-clay flex flex-row justify-center items-center h-210">
-        <div className="relative h-full w-1/2">
-          <Reveal className="block w-full h-full"></Reveal>
-          <Image
-            src="/assets/support.jpg"
-            alt="second-pic"
-            fill
-            className="object-cover"
-          />
+      <section className="bg-clay flex flex-col md:flex-row justify-center items-center min-h-screen md:h-210">
+        <div className="relative h-90 md:h-full w-full md:w-1/2">
+          <Reveal className="block w-full h-full">
+            <div className="absolute inset-0">
+              <Image
+                src="/assets/support.jpg"
+                alt="second-pic"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
-        <div className="bg-moss text-clay h-full w-1/2 flex flex-col justify-between items-start">
-          <div className="max-w-3xl px-16 pt-42">
-            <Reveal><h2 className="font-medium text-5xl max-w-150">You don't deserve enduring any of this alone.</h2></Reveal>
-            <Reveal><p className="mt-8 font-regular text-xl">Any of these could identify you: </p></Reveal>
-            <Reveal><ul className="mt-8 font-regular text-xl list-disc pl-10 flex flex-col gap-4">
+        <div className="order-last md:order-first bg-moss text-clay h-full w-full md:w-1/2 flex flex-col justify-between items-start pt-10 md:pt-0">
+          <div className="max-w-3xl px-8 md:px-16 md:pt-42">
+            <Reveal><h2 className="font-medium text-4xl md:text-5xl max-w-150">You don't deserve enduring any of this alone.</h2></Reveal>
+            <Reveal><p className="mt-6 md:mt-8 font-regular text-base md:text-xl">Any of these could identify you: </p></Reveal>
+            <Reveal><ul className="mt-6 md:mt-8 font-regular  text-base md:text-xl list-disc pl-10 flex flex-col gap-4">
               <li>Constant worry, anxiety or racing thoughts</li>
               <li>Being emotionally on edge everytime</li>
               <li>Difficulty sleeping or relaxing</li>
               <li>Feeling continously overwhelmed and exhausted</li>
               <li>Burdened by traumatic experiences from the past</li>
             </ul></Reveal>
-            <Reveal><p className="mt-10 font-regular text-xl">With support and collaboration, we will understand the root causes and build a system to manage yourself better.</p></Reveal>
+            <Reveal><p className="mt-6 mb-6 md:mb-0 md:mt-10 font-regular text-base md:text-xl">With support and collaboration, we will understand the root causes and build a system to manage yourself better.</p></Reveal>
           </div>
-          <button className="bg-transparent w-full border-t border-sand/80 h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm font-medium hover:bg-sand hover:text-moss cursor-pointer">SCHEDULE A FREE CONSULTATION &#x2192;</button>
+          <button className="bg-transparent w-full border-t border-sand/80 h-16 md:h-18 text-center flex items-center justify-center tracking-wide transition-colors duration-500 ease-in-out text-sm
+          md:text-md font-medium hover:bg-sand hover:text-moss cursor-pointer">SCHEDULE A FREE CONSULTATION &#x2192;</button>
         </div>
       </section>
 
-      <section className="bg-clay flex flex-row justify-center items-center h-225 gap-25">
-        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-9 mb-30">
-          <Reveal><h2 className="text-6xl">Hi, I'm Dr. Maya Reynolds, PsyD</h2></Reveal>
+      <section className="bg-clay flex flex-col md:flex-row justify-center items-center min-h-screen md:h-225 gap-25">
+        <div className="order-last md:order-first w-full md:w-2/5 h-full flex flex-col justify-center items-start gap-9 mb-30 px-8 md:px-0">
+          <Reveal><h2 className="text-4xl md:text-6xl">Hi, I'm Dr. Maya Reynolds, PsyD</h2></Reveal>
           <Reveal><p className="max-w-165 font-regular text-xl leading-8">I’m a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults navigating anxiety, trauma, and burnout.</p></Reveal>
           <Reveal><p className="max-w-165 font-regular text-xl leading-8">I provide a warm, collaborative approach with my therapy where my clients feel respected, understood and involved in the process.</p></Reveal>
-          <div className="flex justify-center items-center w-full pr-20">
-            <button className="mt-10 border border-moss px-8 py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
+          <div className="flex justify-center items-center w-full md:pr-20">
+            <button className="md:mt-10 border border-moss md:px-8 px-6 py-4 md:py-3 uppercase tracking-wide bg-transparent transition-colors duration-500 ease-in-out hover:bg-moss hover:text-sand cursor-pointer">
               SCHEDULE A FREE CONSULTATION NOW &#x2192;
             </button>
           </div>
         </div>
 
-        <div className="relative h-158 w-110 mb-30">
+        <div className="relative mt-15 md:mt-0 h-76 md:h-158 w-52 md:w-110 md:mb-30">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
@@ -180,7 +184,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full overflow-hidden">
+          <div className="absolute -bottom-20 -right-20 w-42 h-42 md:w-72 md:h-72 rounded-full overflow-hidden">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
                 <Image
@@ -195,10 +199,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-sand flex flex-row justify-center items-center h-250 gap-25">
-        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12">
+      <section className="bg-sand flex flex-col md:flex-row justify-center items-center h-250 gap-25">
+        <div className="order-last md:order-first w-full md:w-2/5 h-full flex flex-col justify-start md:justify-center items-start px-8 md:px-0 gap-12 md:gap-12 pt-10 md:pb-0">
           <Reveal>
-            <h2 className="text-6xl font-medium">Our Office</h2>
+            <h2 className="text-4xl md:text-6xl font-medium">Our Office</h2>
           </Reveal>
 
           <Reveal>
@@ -206,7 +210,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="relative h-188 w-130">
+        <div className="relative mt-15 md:mt-0 h-176 md:h-188 w-52 md:w-130">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
@@ -221,7 +225,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="absolute -bottom-20 -left-20 w-78 h-78 overflow-hidden rounded-full">
+          <div className="absolute -bottom-20 -left-20 w-42 h-42 md:w-78 md:h-78 overflow-hidden rounded-full">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
                 <Image
@@ -236,8 +240,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-clay flex flex-row justify-center items-center h-200 gap-25">
-        <div className="relative h-158 w-110 mb-30">
+      <section className="bg-clay flex flex-col md:flex-row justify-center items-center h-200 gap-25">
+        <div className="relative h-76 md:h-158 w-52 md:w-110 mb-30 mt-15">
           <div className="absolute inset-0 overflow-hidden rounded-t-[999px]">
             <Reveal className="block w-full h-full">
               <div className="absolute inset-0">
@@ -245,16 +249,16 @@ export default function Home() {
                   src="/assets/faq.jpg"
                   fill
                   priority
-                  className="a light bulb depicting curiosity symbolizing FAQs"
-                  alt="main"
+                  className="object-cover"
+                  alt="a light bulb depicting curiosity symbolizing FAQs"
                 />
               </div>
             </Reveal>
           </div>
         </div>
 
-        <div className="w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
-          <Reveal><h2 className="text-6xl font-medium">FAQs</h2></Reveal>
+        <div className="w-full md:w-2/5 h-full flex flex-col justify-center items-start gap-12 mb-30">
+          <Reveal><h2 className="text-4xl md:text-6xl font-medium">FAQs</h2></Reveal>
           <Reveal><Faq /></Reveal>
         </div>
       </section>

@@ -32,16 +32,16 @@ export default function Faq() {
 
                     <button
                         onClick={() => setOpen(open === i ? null : i)}
-                        className="w-full flex items-center justify-start gap-5 py-6"
+                        className="w-full flex items-center justify-start gap-5 py-2 md:py-6"
                     >
                         {/* for Plus and Cross */}
                         <span
-                            className={`text-4xl transition-transform duration-300 ${open === i ? "rotate-45" : ""
+                            className={`text-lg md:text-4xl transition-transform duration-300 ${open === i ? "rotate-45" : ""
                                 }`}
                         >
                             &#43;
                         </span>
-                        <span className="text-3xl font-regular">{item.q}</span>
+                        <span className="text-base md:text-3xl font-regular">{item.q}</span>
 
                     </button>
 
